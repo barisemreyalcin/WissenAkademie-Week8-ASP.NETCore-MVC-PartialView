@@ -1,0 +1,44 @@
+﻿ @model IEnumerable<Product>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+@Html.Partial("ProductList");
+
+@* @Html.Partial("_Footer"); *@
+
+@* <h1 class="bg-success text-white">Product List --- Home/Index</h1>
+<table class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>Product ID</th>
+            <th>Product Name</th>
+            <th>Category Name</th>
+            <th>Description</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Product item in Model)
+        {
+            <tr>
+                <td>@item.ProductID</td>
+                <td>@item.ProductName</td>
+                <td>@item.CategoryName</td>
+                <td>@item.Description</td>
+                <td>@item.Price</td>
+            </tr>
+        }
+    </tbody>
+    <tfoot class="text-center fs-4">
+        <tr>
+            <td colspan="5">@Model.Count() Items</td>
+        </tr>
+    </tfoot>
+</table> *@
